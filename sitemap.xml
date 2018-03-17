@@ -9,33 +9,28 @@
 
 <url>
   <loc>https://chullman.github.io/portfolio/</loc>
-  <lastmod>2018-03-17T05:50:53+00:00</lastmod>
+  <lastmod>2018-03-17T12:45:51+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://chullman.github.io/portfolio/webdev.html</loc>
-  <lastmod>2018-03-17T05:50:53+00:00</lastmod>
+  <loc>https://chullman.github.io/portfolio/pages/webdev/</loc>
+  <lastmod>2018-03-17T12:45:51+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://chullman.github.io/portfolio/csharp.html</loc>
-  <lastmod>2018-03-17T05:50:53+00:00</lastmod>
+  <loc>https://chullman.github.io/portfolio/pages/csharp/</loc>
+  <lastmod>2018-03-17T12:45:51+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://chullman.github.io/portfolio/infrastructure.html</loc>
-  <lastmod>2018-03-17T05:50:53+00:00</lastmod>
+  <loc>https://chullman.github.io/portfolio/pages/infrastructure/</loc>
+  <lastmod>2018-03-17T12:45:51+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://chullman.github.io/portfolio/about.html</loc>
-  <lastmod>2018-03-17T05:50:53+00:00</lastmod>
+  <loc>https://chullman.github.io/portfolio/pages/about/</loc>
+  <lastmod>2018-03-17T12:45:51+00:00</lastmod>
   <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://chullman.github.io/portfolio/index.html</loc>
-  <lastmod>2018-03-17T05:50:53+00:00</lastmod>
-  <priority>0.64</priority>
 </url>
 
 
