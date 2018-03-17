@@ -577,7 +577,7 @@ Linked page - Title header
   font-size: 4rem; }
 
 .jumbo-header-front .anchor {
-  content: url("../images/anchor-icon.png");
+  content: url("../images/anchor_icon.png");
   visibility: hidden;
   transform: scale(0.5, 0.5); }
 
