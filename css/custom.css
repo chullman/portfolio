@@ -581,7 +581,10 @@ Linked page - Title header
   font-weight: 700;
   margin-bottom: 0;
   text-align: center;
-  font-size: 4rem; }
+  font-size: 4rem;
+  width: 100%;
+  padding-right: 40px;
+  padding-left: 40px; }
 
 .jumbo-header-front .anchor::before {
   content: url("../images/anchor_icon.png");
