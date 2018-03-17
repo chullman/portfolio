@@ -116,6 +116,11 @@ Home page - Jumbotron
 *********************
 */
 
+.overflow-prevention {
+  position: relative;
+  overflow: hidden;
+}
+
 .jumbotron::before {
   opacity: 0.4;
   position: absolute;
@@ -149,28 +154,39 @@ Home page - Jumbotron
   float: left;
   animation: wave-anim 5s infinite ease-in-out alternate;
   position: absolute;
+
+  
+  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+
+  border: 1px solid #5284a1;
+  -webkit-border-radius: 20px 20px 0 0;
+  border-radius: 20px 20px 0 0;
+  
 }
 
 @for $i from 1 through 19 {
   .wave-line:nth-child(#{$i}) {
-    animation-delay: #{0.08*$i}s;
+    animation-delay: #{0.15*$i}s;
     left: #{20*$i}px;
   }
 }
 
 
+
 @keyframes wave-anim {
   0% {
-    transform: translateY(-200px);
-    height: 200px;
+    transform: translateY(-170px);
+    height: 170px;
   }
   100% {
-    transform: translateY(-300px);
-    height: 300px;
+    transform: translateY(-270px);
+    height: 270px;
   }
 }
 
-@media (min-width: 578px) {
+@media (min-width: 400px) {
 
   .wave-line {
     width: 50px;
@@ -178,17 +194,17 @@ Home page - Jumbotron
 
   @for $i from 1 through 19 {
     .wave-line:nth-child(#{$i}) {
-      animation-delay: #{0.08*$i}s;
       left: #{50*$i}px;
     }
   }
+
 
 }
 
 
 .jumbotron svg {
   position: absolute;
-  top: 130px;
+  top: 160px;
   width: 70%;
   height: 70%;
 }
@@ -325,7 +341,7 @@ Home Page - Introduction box
   height: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #b3b3b3;
+  background-color: white;
 }
 
 #intro-box > h1,
