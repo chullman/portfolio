@@ -95,7 +95,7 @@ Top navigation bar
 
 
 
-@media (min-width: 400px) {
+@media (min-width: 578px) {
 
   #topnav-list {
     float: right;
@@ -170,7 +170,7 @@ Home page - Jumbotron
   }
 }
 
-@media (min-width: 400px) {
+@media (min-width: 578px) {
 
   .wave-line {
     width: 50px;
@@ -250,7 +250,7 @@ Home page - Jumbotron
   display: none;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 578px) {
   // skeleton.css override
   .button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary {
     display: block;
