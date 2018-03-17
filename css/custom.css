@@ -116,7 +116,7 @@ Home page - Jumbotron
   right: 50%; }
 
 .wave-line {
-  background: #5284a1;
+  background: #516ba1;
   width: 20px;
   float: left;
   animation: wave-anim 5s infinite ease-in-out alternate;
@@ -124,7 +124,7 @@ Home page - Jumbotron
   box-sizing: content-box;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
-  border: 1px solid #5284a1;
+  border: 1px solid #516ba1;
   -webkit-border-radius: 20px 20px 0 0;
   border-radius: 20px 20px 0 0; }
 
@@ -281,8 +281,8 @@ Home page - Jumbotron
 #underwater {
   position: absolute;
   animation: ship-water-anim 2s ease 2s infinite alternate;
-  stroke: #5284a1;
-  fill: #5284a1; }
+  stroke: #516ba1;
+  fill: #516ba1; }
 
 #left_x5F_hull_x5F_whitespace,
 #right_x5F_hull_x5F_whitespace {
@@ -653,7 +653,7 @@ Fixed contact sidebar
 .footer-container .contact-text {
   font-size: 12px;
   font-weight: bold;
-  color: #bbb;
+  color: white;
   text-transform: uppercase;
   letter-spacing: .05em;
   margin: auto 0 0 0;
