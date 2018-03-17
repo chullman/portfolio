@@ -15,6 +15,7 @@ Top navigation bar
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  flex: 0 1 auto;
   align-items: center;
   background-color: #293345;
 }
@@ -241,6 +242,10 @@ Home page - Jumbotron
     }
   }
 
+
+}
+
+@media (min-width: 685px) {
   .jumbotron h1,
   .jumbotron h2 {
     font-size: 3em;
@@ -256,6 +261,7 @@ Home Page - Introduction box
 #intro-box {
   display: flex;
   flex-direction: column;
+  flex: 0 1 auto;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -293,6 +299,7 @@ Home page - Cards
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  flex: 0 1 auto;
   width: 100%;
   margin-top: 5%;
   justify-content: space-around;
@@ -439,6 +446,7 @@ Fixed contact sidebar
 
   flex-direction: row;
   flex-wrap: wrap;
+  flex: 0 1 auto;
   justify-content: space-between;
   padding: 0;
   margin: 0;
@@ -466,6 +474,7 @@ Fixed contact sidebar
 
   display: flex;
   flex-direction: column;
+  flex: 0 1 auto;
   align-items: center;
   width: 400px;
   height: 100%;
@@ -525,6 +534,7 @@ Linked page - Title header
   position: relative;
   display: flex;
   flex-direction: column;
+  flex: 0 1 auto;
   align-items: center;
 
   width: 100%;
@@ -552,6 +562,7 @@ Linked page - Title header
 
   display: flex;
   flex-direction: column;
+  flex: 0 1 auto;
   align-items: center;
   justify-content: flex-start;
   padding-top: 20px;
@@ -567,8 +578,15 @@ Linked page - Title header
   font-size: 4rem;
 }
 
-.jumbo-header-front .anchor {
+.jumbo-header-front .anchor::before {
   content: url("../images/anchor_icon.png");
+  text-align: center;
+}
+
+.jumbo-header-front .anchor {
+  text-align: center;
+  height: 100%;
+  width: 100%;
   visibility: hidden;
   transform: scale(.5, .5);
 }
@@ -588,12 +606,19 @@ About page - Personality box
 .tag-and-portrait-container {
   display: flex;
   flex-direction: column;
-  
+  flex: 0 1 auto;
+
+  position: relative;
+
   margin-left: auto;
   margin-right: auto;
 
+  /*
   width: 350px;
-  height: 635px;
+  height: 735px;
+  */
+  width: 100%;
+  height: 100%;
 
   margin-bottom: 30px;
 
@@ -611,15 +636,27 @@ About page - Personality box
 
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
+  flex: 0 1 auto;
 
   padding-left: 20px;
   padding-top: 20px;
   padding-right: 10px;
 
   height: 100%;
-  width: 300px;
+  width: 100%;
+
+  position: relative;
+}
+
+.tag-container h1 {
+  text-align: center;
+}
+
+.tag-container ul {
+  width: 100%;
+  padding-left: 80px;
 }
 
 .bold {
@@ -628,26 +665,39 @@ About page - Personality box
 
 .tag-container li {
   font-size: 1.3em;
+  padding-right: 70px;
+  
 }
 
 .portrait-container {
+  display: inline;
+  text-align: center;
 
-  height: 350px;
-  width: 350px;
+  height: 100%;
+  width: 100%;
   
 }
 
-.portrait-container > div {
+.portrait-container > div::before {
   content: url("../images/self_thumb.png");
+
+
   margin-left: auto;
-  margin-right: auto;
+}
+
+.portrait-container > div {
+
+
   
+  width: 100%;
+  height: 100%;
 }
 
 @media (min-width: 800px) {
 
   .tag-and-portrait-container {
     flex-direction: row;
+    flex: 0 1 auto;
 
     width: 635px;
     height: 350px;
@@ -655,6 +705,7 @@ About page - Personality box
 
   .portrait-container {
     width: 350px;
+    text-align: right;
   }
 
   .tag-container {
@@ -687,6 +738,8 @@ About page - Timeline
 
   display: flex;
   flex-direction: column;
+  flex: 0 1 auto;
+
   justify-content: center;
   align-items: center;
 
@@ -704,7 +757,7 @@ About page - Timeline
 
   margin-bottom: 20px;
 
-
+  width: 100%;
   margin-left: 2em;
 }
 
@@ -787,7 +840,7 @@ Infrastructure page - Skills and Experience Headings
 .skills-exp-cont {
   display: flex;
   flex-direction: column;
-  
+  flex: 0 1 auto;
 
 
   width: 100%;
@@ -824,7 +877,7 @@ Infrastructure page - Skills and Experience Headings
 .cert-cont {
   display: flex;
   flex-direction: column;
-  
+  flex: 0 1 auto;
 
 
   width: 100%;
@@ -847,21 +900,31 @@ Infrastructure page - Skills and Experience Headings
 .cert-cont-bottom {
   display: flex;
   flex-direction: column;
+  flex: 0 1 auto;
 }
 
-.cert-logo {
+div[class*='cert-logo']{
   margin-left: auto;
   margin-right: auto;
 
-  
   border-bottom: 5px solid #b3b3b3;
+}
 
+
+
+.cert-logo-rhcsa::before {
+  content: url("../images/rhcsa_logo.png");
+}
+
+.cert-logo-ccna::before {
+  content: url("../images/ccna_logo.png");
 }
 
 @media (min-width: 800px) {
 
   .skills-exp-cont {
     flex-direction: row;
+    flex: 0 1 auto;
   }
 
   .skills-exp-cont-left {
@@ -884,6 +947,7 @@ Infrastructure page - Skills and Experience Headings
   .cert-cont-bottom {
     display: flex;
     flex-direction: row;
+    flex: 0 1 auto;
   }
 }
 
