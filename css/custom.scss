@@ -520,7 +520,7 @@ Home page - Cards
 }
 
 #cards-container .thumb {
-    height: 400px;
+    height: 50%;
     width: 100%;
     background-size: contain;
     background-position: center center;
@@ -570,16 +570,22 @@ Home page - Cards
 
 .card-bottom-half {
     background-color: #293345;
-    height: 100%;
+    height: 50%;
+    display: block;
+    position: relative;
 }
 
 .card-bottom-tags {
+    display: block;
     font-size: 12px;
     font-weight: bold;
     color: #bbb;
     text-transform: uppercase;
     letter-spacing: .05em;
-    margin: auto 0 0 0;
+    margin-top: auto;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 0;
 }
 
 .card-title {
