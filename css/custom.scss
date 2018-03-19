@@ -1112,11 +1112,12 @@ About page - Timeline
     padding-top: 40px;
     -webkit-box-shadow: 5px 5px 5px 0px rgba(41, 51, 69, 0.75);
     box-shadow: 5px 5px 5px 0px rgba(41, 51, 69, 0.75);
+    overflow: hidden;
 }
 
 .timeline-container {
     margin-bottom: 20px;
-    width: 100%;
+    width: 90%;
     margin-left: 2em;
 }
 
@@ -1129,7 +1130,7 @@ About page - Timeline
 .timeline-container > ul {
     margin: 0 0 0 0;
     padding: 0 0 0 0;
-    width: 100%;
+    width: 90%;
     overflow: hidden;
 }
 
