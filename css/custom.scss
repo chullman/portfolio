@@ -84,7 +84,6 @@ Top navigation bar
   display: block;
   text-decoration: none;
   white-space: normal;
-  /*transition: color 450ms ease-in-out 0s, background-color 450ms ease-in-out 0s;*/
   color:white;
   font-size: 1.3em;
   line-height: 49px;
@@ -854,10 +853,6 @@ About page - Personality box
   margin-left: auto;
   margin-right: auto;
 
-  /*
-  width: 350px;
-  height: 735px;
-  */
   width: 100%;
   height: 100%;
 
@@ -1126,7 +1121,7 @@ About page - Timeline
   z-index: 1;
 }
 
-time {
+.year-text {
   display: block;
   font-size: 2rem;
   font-weight: bold;
@@ -1135,7 +1130,7 @@ time {
 
 /*
 ****************************************************
-Infrastructure page - Skills and Experience Headings
+Skills/experience pages - Skills and Experience Headings
 ****************************************************
 */ 
 
