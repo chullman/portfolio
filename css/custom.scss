@@ -5,6 +5,21 @@ body {
     background-position: center;
 }
 
+.container {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 578px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+  }
+}
+
 /*
 *********************
 Top navigation bar
@@ -113,7 +128,7 @@ Top navigation bar
     text-decoration: none;
     white-space: normal;
     color: white;
-    font-size: 1.3em;
+    font-size: 1em;
     line-height: 49px;
     padding: 0 15px;
     text-transform: uppercase;
@@ -122,6 +137,7 @@ Top navigation bar
 @media (min-width: 578px) {
     #topnav-list {
         float: right;
+        
         border-bottom: 5px solid #da871f;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
@@ -614,7 +630,7 @@ Fixed contact sidebar
     display: none;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 657px) {
     .contact-fixed-sidebar {
         display: block;
         position: fixed;
@@ -624,6 +640,7 @@ Fixed contact sidebar
         margin: 0;
         top: 40%;
         list-style-type: none;
+        z-index: 3;
     }
 
     .contact-fixed-sidebar a {
@@ -1460,7 +1477,7 @@ div[class*='cert-logo'] {
 
   justify-content: flex-start;
 
-  background: white;
+  background: #293345;
 
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
@@ -1478,3 +1495,97 @@ div[class*='cert-logo'] {
       box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
   }
 }
+
+.project-cards-container > div > h1 {
+  color: white;
+}
+
+
+
+#overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 3;
+}
+
+.blur-in {
+  filter: blur(100px);
+  -webkit-filter: blur(100px);
+  -moz-filter: blur(100px);
+  -o-filter: blur(100px);
+  -ms-filter: blur(100px);
+}
+
+@keyframes blurin {
+  0% {
+      -webkit-filter: blur(100px);
+      -moz-filter: blur(100px);
+      -o-filter: blur(100px);
+      -ms-filter: blur(100px);
+      filter: blur(100px);
+  }
+
+  100% {
+      -webkit-filter: blur(100px);
+      -moz-filter: blur(100px);
+      -o-filter: blur(100px);
+      -ms-filter: blur(100px);
+      filter: blur(100px);
+  }
+}
+
+@-webkit-keyframes blurin {
+  0% {
+      -webkit-filter: blur(0px);
+      -moz-filter: blur(0px);
+      -o-filter: blur(0px);
+      -ms-filter: blur(0px);
+      filter: blur(0px);
+  }
+
+  100% {
+      -webkit-filter: blur(4px);
+      -moz-filter: blur(4px);
+      -o-filter: blur(4px);
+      -ms-filter: blur(4px);
+      filter: blur(4px);
+  }
+}
+
+@-moz-keyframes blurin {
+  0% {
+      -webkit-filter: blur(0px);
+      -moz-filter: blur(0px);
+      -o-filter: blur(0px);
+      -ms-filter: blur(0px);
+      filter: blur(0px);
+  }
+
+  100% {
+      -webkit-filter: blur(4px);
+      -moz-filter: blur(4px);
+      -o-filter: blur(4px);
+      -ms-filter: blur(4px);
+      filter: blur(4px);
+  }
+}
+
+@-o-keyframes blurin {
+  0% {
+      -webkit-filter: blur(0px);
+      -moz-filter: blur(0px);
+      -o-filter: blur(0px);
+      -ms-filter: blur(0px);
+      filter: blur(0px);
+  }
+
+  100% {
+      -webkit-filter: blur(4px);
+      -moz-filter: blur(4px);
+      -o-filter: blur(4px);
+      -ms-filter: blur(4px);
+      filter: blur(4px);
+  }
+}
+

@@ -47,10 +47,23 @@
           }
         }
       });
+
+      $(document).ready(function() {
+        $('.card-wrap').click(function (e) {
+
+          $('#overlay').addClass('blur-in');
+          
+          e.stopPropagation();
+        });
+      });
+
       </script>
 
   </head>
   <body>
+
+    <div id="overlay" class="blur-in"></div>
+
     <ul class="contact-fixed-sidebar">
       <li>
         <a href="mailto:christopherhullman@gmail.com">
@@ -122,9 +135,18 @@
         </div>
         <div class="projects-cont-right">
           <div class="project-cards-container">
-            <div><h1>Project 1</h1></div>
-            <div><h1>Project 2</h1></div>
-            <div><h1>Project 3</h1></div>
+            <div>
+              <h1>Project 1</h1>
+              <a href="#" class="card-wrap"></a>
+            </div>
+            <div>
+              <h1>Project 2</h1>
+              <a href="#" class="card-wrap"></a>
+            </div>
+            <div>
+              <h1>Project 3</h1>
+              <a href="#" class="card-wrap"></a>
+            </div>
           </div>
         </div>
       </div>
