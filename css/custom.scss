@@ -1,10 +1,3 @@
-body {
-    background-image: url(../images/background.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-}
-
 .container {
   padding: 0;
   margin: 0;
@@ -1500,21 +1493,19 @@ div[class*='cert-logo'] {
   color: white;
 }
 
-
-
-#overlay {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: 3;
+body {
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
 }
 
-.blur-in {
-  filter: blur(100px);
-  -webkit-filter: blur(100px);
-  -moz-filter: blur(100px);
-  -o-filter: blur(100px);
-  -ms-filter: blur(100px);
+#background {
+  background-image: url(../images/background.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 @keyframes blurin {
