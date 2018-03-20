@@ -23,6 +23,32 @@
     <link rel="stylesheet" href="../../fonts/icomoon.css">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="../../images/favicon.png">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+       $(document).ready(function() {
+        // When the user scrolls the page, execute myFunction 
+        window.onscroll = function() {myFunction()};
+  
+        // Get the header
+
+        var projectsCont = document.getElementById("projects-cont");
+        var header = document.getElementById("projects-header-sticky");
+  
+        // Get the offset position of the navbar
+        var sticky = projectsCont.offsetTop;
+  
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+      });
+      </script>
+
   </head>
   <body>
     <ul class="contact-fixed-sidebar">
@@ -87,12 +113,19 @@
         <div class="skills-exp-cont-right">
         </div>
       </div>
-      <div class="skills-exp-cont">
-        <div class="skills-exp-cont-left">
-          <h1>Projects</h1>
-          <h2>Coming Soon!</h2>
+      <div class="projects-cont" id="projects-cont">
+        <div class="projects-cont-left">
+          <div id="projects-header-sticky">
+            <h1>Projects</h1>
+            <h2>Coming Soon!</h2>
+          </div>
         </div>
-        <div class="skills-exp-cont-right">
+        <div class="projects-cont-right">
+          <div class="project-cards-container">
+            <div><h1>Project 1</h1></div>
+            <div><h1>Project 2</h1></div>
+            <div><h1>Project 3</h1></div>
+          </div>
         </div>
       </div>
       <footer class="footer-container">
@@ -137,6 +170,8 @@
         </div>
       </footer>
     </div>
+
+    
   </body>
 </html>
 
