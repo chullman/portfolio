@@ -51,7 +51,7 @@
       $(document).ready(function() {
         $('.card-wrap').click(function (e) {
 
-          $('#background').addClass('blur-in');
+          $('#blur-overlay').addClass('blur-in');
           
           e.stopPropagation();
         });
@@ -61,6 +61,8 @@
 
   </head>
   <body>
+
+    <div id="blur-overlay">
 
     <div id="background">
 
@@ -139,7 +141,7 @@
             <div class="project-cards-container">
               <div>
                 <h1>Project 1</h1>
-                <a href="#" class="card-wrap"></a>
+                <a class="card-wrap"></a>
               </div>
               <div>
                 <h1>Project 2</h1>
@@ -194,6 +196,8 @@
           </div>
         </footer>
       </div>
+
+    </div>
 
     </div>
 
