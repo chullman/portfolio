@@ -1413,12 +1413,11 @@ div[class*='cert-logo'] {
 .project-cards-container > div > h1 {
   color: white; }
 
-body {
-  -webkit-filter: blur(10px);
-  -moz-filter: blur(10px);
-  -o-filter: blur(10px);
-  -ms-filter: blur(10px);
-  filter: blur(10px); }
+.blur-in {
+  -webkit-animation: blurin 2s forwards;
+  -moz-animation: blurin 2s forwards;
+  -o-animation: blurin 2s forwards;
+  animation: blurin 2s forwards; }
 
 #background {
   background-image: url(../images/background.png);
@@ -1428,17 +1427,17 @@ body {
 
 @keyframes blurin {
   0% {
-    -webkit-filter: blur(100px);
-    -moz-filter: blur(100px);
-    -o-filter: blur(100px);
-    -ms-filter: blur(100px);
-    filter: blur(100px); }
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+    filter: blur(0px); }
   100% {
-    -webkit-filter: blur(100px);
-    -moz-filter: blur(100px);
-    -o-filter: blur(100px);
-    -ms-filter: blur(100px);
-    filter: blur(100px); } }
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px); } }
 @-webkit-keyframes blurin {
   0% {
     -webkit-filter: blur(0px);
