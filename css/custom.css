@@ -8,7 +8,7 @@
   .container {
     margin-left: auto;
     margin-right: auto;
-    max-width: 960px; } }
+    max-width: 1280px; } }
 /*
 *********************
 Top navigation bar
@@ -172,7 +172,8 @@ Home page - Jumbotron
   right: 50%; }
 
 .wave-line {
-  background: #516ba1;
+  display: none;
+  background: #034078;
   width: 20px;
   float: left;
   -webkit-animation: wave-anim 5s infinite ease-in-out alternate;
@@ -181,87 +182,166 @@ Home page - Jumbotron
   box-sizing: content-box;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
-  border: 1px solid #516ba1;
+  border: 1px solid #034078;
   border-radius: 20px 20px 0 0;
   -webkit-transform: translateY(-170px);
   transform: translateY(-170px);
   height: 170px; }
 
 .wave-line:nth-child(1) {
+  display: block;
   animation-delay: 0.15s;
-  left: 20px; }
+  left: 0px; }
 
 .wave-line:nth-child(2) {
+  display: block;
   animation-delay: 0.3s;
-  left: 40px; }
+  left: 20px; }
 
 .wave-line:nth-child(3) {
+  display: block;
   animation-delay: 0.45s;
-  left: 60px; }
+  left: 40px; }
 
 .wave-line:nth-child(4) {
+  display: block;
   animation-delay: 0.6s;
-  left: 80px; }
+  left: 60px; }
 
 .wave-line:nth-child(5) {
+  display: block;
   animation-delay: 0.75s;
-  left: 100px; }
+  left: 80px; }
 
 .wave-line:nth-child(6) {
+  display: block;
   animation-delay: 0.9s;
-  left: 120px; }
+  left: 100px; }
 
 .wave-line:nth-child(7) {
+  display: block;
   animation-delay: 1.05s;
-  left: 140px; }
+  left: 120px; }
 
 .wave-line:nth-child(8) {
+  display: block;
   animation-delay: 1.2s;
-  left: 160px; }
+  left: 140px; }
 
 .wave-line:nth-child(9) {
+  display: block;
   animation-delay: 1.35s;
-  left: 180px; }
+  left: 160px; }
 
 .wave-line:nth-child(10) {
+  display: block;
   animation-delay: 1.5s;
-  left: 200px; }
+  left: 180px; }
 
 .wave-line:nth-child(11) {
+  display: block;
   animation-delay: 1.65s;
-  left: 220px; }
+  left: 200px; }
 
 .wave-line:nth-child(12) {
+  display: block;
   animation-delay: 1.8s;
-  left: 240px; }
+  left: 220px; }
 
 .wave-line:nth-child(13) {
+  display: block;
   animation-delay: 1.95s;
-  left: 260px; }
+  left: 240px; }
 
 .wave-line:nth-child(14) {
+  display: block;
   animation-delay: 2.1s;
-  left: 280px; }
+  left: 260px; }
 
 .wave-line:nth-child(15) {
+  display: block;
   animation-delay: 2.25s;
-  left: 300px; }
+  left: 280px; }
 
 .wave-line:nth-child(16) {
+  display: block;
   animation-delay: 2.4s;
-  left: 320px; }
+  left: 300px; }
 
 .wave-line:nth-child(17) {
+  display: block;
   animation-delay: 2.55s;
-  left: 340px; }
+  left: 320px; }
 
 .wave-line:nth-child(18) {
+  display: block;
   animation-delay: 2.7s;
-  left: 360px; }
+  left: 340px; }
 
 .wave-line:nth-child(19) {
+  display: block;
   animation-delay: 2.85s;
+  left: 360px; }
+
+.wave-line:nth-child(20) {
+  display: block;
+  animation-delay: 3s;
   left: 380px; }
+
+.wave-line:nth-child(21) {
+  display: block;
+  animation-delay: 3.15s;
+  left: 400px; }
+
+.wave-line:nth-child(22) {
+  display: block;
+  animation-delay: 3.3s;
+  left: 420px; }
+
+.wave-line:nth-child(23) {
+  display: block;
+  animation-delay: 3.45s;
+  left: 440px; }
+
+.wave-line:nth-child(24) {
+  display: block;
+  animation-delay: 3.6s;
+  left: 460px; }
+
+.wave-line:nth-child(25) {
+  display: block;
+  animation-delay: 3.75s;
+  left: 480px; }
+
+.wave-line:nth-child(26) {
+  display: block;
+  animation-delay: 3.9s;
+  left: 500px; }
+
+.wave-line:nth-child(27) {
+  display: block;
+  animation-delay: 4.05s;
+  left: 520px; }
+
+.wave-line:nth-child(28) {
+  display: block;
+  animation-delay: 4.2s;
+  left: 540px; }
+
+.wave-line:nth-child(29) {
+  display: block;
+  animation-delay: 4.35s;
+  left: 560px; }
+
+.wave-line:nth-child(30) {
+  display: block;
+  animation-delay: 4.5s;
+  left: 580px; }
+
+.wave-line:nth-child(31) {
+  display: block;
+  animation-delay: 4.65s;
+  left: 600px; }
 
 @-webkit-keyframes wave-anim {
   0% {
@@ -286,61 +366,97 @@ Home page - Jumbotron
     width: 50px; }
 
   .wave-line:nth-child(1) {
-    left: 50px; }
+    left: 0px; }
 
   .wave-line:nth-child(2) {
-    left: 100px; }
+    left: 50px; }
 
   .wave-line:nth-child(3) {
-    left: 150px; }
+    left: 100px; }
 
   .wave-line:nth-child(4) {
-    left: 200px; }
+    left: 150px; }
 
   .wave-line:nth-child(5) {
-    left: 250px; }
+    left: 200px; }
 
   .wave-line:nth-child(6) {
-    left: 300px; }
+    left: 250px; }
 
   .wave-line:nth-child(7) {
-    left: 350px; }
+    left: 300px; }
 
   .wave-line:nth-child(8) {
-    left: 400px; }
+    left: 350px; }
 
   .wave-line:nth-child(9) {
-    left: 450px; }
+    left: 400px; }
 
   .wave-line:nth-child(10) {
-    left: 500px; }
+    left: 450px; }
 
   .wave-line:nth-child(11) {
-    left: 550px; }
+    left: 500px; }
 
   .wave-line:nth-child(12) {
-    left: 600px; }
+    left: 550px; }
 
   .wave-line:nth-child(13) {
-    left: 650px; }
+    left: 600px; }
 
   .wave-line:nth-child(14) {
-    left: 700px; }
+    left: 650px; }
 
   .wave-line:nth-child(15) {
-    left: 750px; }
+    left: 700px; }
 
   .wave-line:nth-child(16) {
-    left: 800px; }
+    left: 750px; }
 
   .wave-line:nth-child(17) {
-    left: 850px; }
+    left: 800px; }
 
   .wave-line:nth-child(18) {
-    left: 900px; }
+    left: 850px; }
 
   .wave-line:nth-child(19) {
-    left: 950px; } }
+    left: 900px; }
+
+  .wave-line:nth-child(20) {
+    left: 950px; }
+
+  .wave-line:nth-child(21) {
+    left: 1000px; }
+
+  .wave-line:nth-child(22) {
+    left: 1050px; }
+
+  .wave-line:nth-child(23) {
+    left: 1100px; }
+
+  .wave-line:nth-child(24) {
+    left: 1150px; }
+
+  .wave-line:nth-child(25) {
+    left: 1200px; }
+
+  .wave-line:nth-child(26) {
+    left: 1250px; }
+
+  .wave-line:nth-child(27) {
+    left: 1300px; }
+
+  .wave-line:nth-child(28) {
+    left: 1350px; }
+
+  .wave-line:nth-child(29) {
+    left: 1400px; }
+
+  .wave-line:nth-child(30) {
+    left: 1450px; }
+
+  .wave-line:nth-child(31) {
+    left: 1500px; } }
 .jumbotron svg {
   position: absolute;
   top: 160px;
@@ -352,8 +468,8 @@ Home page - Jumbotron
   position: absolute;
   -webkit-animation: ship-water-anim 2s ease 2s infinite alternate;
   animation: ship-water-anim 2s ease 2s infinite alternate;
-  stroke: #516ba1;
-  fill: #516ba1; }
+  stroke: #034078;
+  fill: #034078; }
 
 #left_x5F_hull_x5F_whitespace,
 #right_x5F_hull_x5F_whitespace {
@@ -376,17 +492,16 @@ Home page - Jumbotron
 .jumbotron h1,
 .jumbotron h2 {
   margin-bottom: 0;
-  text-align: right;
-  margin-right: 8%;
+  text-align: center;
   text-transform: uppercase;
-  font-size: 2em; }
+  font-size: 2.4em; }
 
 .jumbotron h1 {
   padding-top: 2%; }
 
 .jumbotron h2 {
   padding-top: 0;
-  color: whitesmoke; }
+  color: black; }
 
 .jumbotron h1 {
   font-family: 'Montserrat', sans-serif; }
@@ -417,7 +532,7 @@ Home page - Jumbotron
 @media (min-width: 685px) {
   .jumbotron h1,
   .jumbotron h2 {
-    font-size: 3em; } }
+    font-size: 3.2em; } }
 /*
 *********************
 Home Page - Introduction box
@@ -464,7 +579,7 @@ Home Page - Introduction box
   height: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #2c3c4d; }
+  background-color: #E7E5DF; }
 
 #intro-box > h1,
 #intro-box > h2,
@@ -585,7 +700,7 @@ Home page - Cards
   border-bottom: 5px solid #FC9E49; }
 
 #cards-container .about-card {
-  background-color: #293345;
+  background-color: #1A2530;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -621,7 +736,7 @@ Home page - Cards
   display: inline; }
 
 .card-bottom-half {
-  background-color: #293345;
+  background-color: #1A2530;
   height: 50%;
   display: block;
   position: relative; }
