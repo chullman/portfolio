@@ -1404,7 +1404,7 @@ Skills/experience pages - Skills and Experience Headings
   -ms-justify-content: center;
   -o-justify-content: center;
   width: 100%;
-  height: 500px;
+  height: 100%;
   margin-bottom: 30px;
   -webkit-box-shadow: 5px 5px 5px 0px rgba(41, 51, 69, 0.75);
   box-shadow: 5px 5px 5px 0px rgba(41, 51, 69, 0.75);
@@ -1458,6 +1458,9 @@ div[class*='cert-logo'] {
     width: 50%;
     height: 100%; } }
 @media (min-width: 500px) {
+  .cert-cont {
+    height: 500px; }
+
   .cert-cont-bottom {
     display: -webkit-box;
     display: flex;
