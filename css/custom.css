@@ -644,20 +644,17 @@ Home page - Cards
   width: 100%;
   margin-top: 5%; }
 
-#cards-container .button-primary {
-  display: none; }
+#cards-container .button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary {
+  display: block;
+  position: relative;
+  margin-top: 10px;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #1A2530;
+  border-color: #FC9E49;
+  font-size: 15px; }
 
-@media (min-width: 578px) {
-  #cards-container .button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary {
-    display: block;
-    position: relative;
-    margin-top: 10px;
-    max-width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #1A2530;
-    border-color: #FC9E49;
-    font-size: 15px; } }
 #cards-container > div {
   display: -webkit-box;
   display: flex;
