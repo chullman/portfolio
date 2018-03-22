@@ -512,22 +512,22 @@ Home page - Jumbotron
 .orange-letters {
   color: #ad6d1d; }
 
-.button-primary {
+.jumbotron .button-primary {
   display: none; }
 
 @media (min-width: 578px) {
-  .button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary {
+  .jumbotron .button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary {
     display: block;
     position: relative;
     float: right;
     margin-top: 10px;
-    background-color: #293345;
+    background-color: #1A2530;
     border-color: #FC9E49;
     font-size: 15px;
     -webkit-transition: all 300ms ease-in-out 0s;
     -o-transition: all 300ms ease-in-out 0s;
     transition: all 300ms ease-in-out 0s; }
-    .button.button-primary:hover, button.button-primary:hover, input[type="submit"].button-primary:hover, input[type="reset"].button-primary:hover, input[type="button"].button-primary:hover {
+    .jumbotron .button.button-primary:hover, button.button-primary:hover, input[type="submit"].button-primary:hover, input[type="reset"].button-primary:hover, input[type="button"].button-primary:hover {
       background-color: #FC9E49; } }
 @media (min-width: 685px) {
   .jumbotron h1,
@@ -644,6 +644,20 @@ Home page - Cards
   width: 100%;
   margin-top: 5%; }
 
+#cards-container .button-primary {
+  display: none; }
+
+@media (min-width: 578px) {
+  #cards-container .button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary {
+    display: block;
+    position: relative;
+    margin-top: 10px;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #1A2530;
+    border-color: #FC9E49;
+    font-size: 15px; } }
 #cards-container > div {
   display: -webkit-box;
   display: flex;
