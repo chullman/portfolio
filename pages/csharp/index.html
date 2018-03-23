@@ -55,12 +55,28 @@
           
           e.stopPropagation();
         });
+
+        $('.close-project-popup').click(function (e) {
+
+          $('#blur-overlay').removeClass('blur-in');
+          
+          e.stopPropagation();
+        });
       });
 
       </script>
 
   </head>
   <body>
+
+    <div id="open-project-popup" class="project-popup">
+      <div>
+        <a href="#close-project-popup" title="Close" class="close-project-popup">Close</a>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque necessitatibus repellat culpa est porro minus, cum doloribus rerum cupiditate sint quo, nesciunt repellendus laudantium sunt suscipit labore voluptatibus in minima?</p>
+      </div>
+
+    </div>
+
 
     <div id="blur-overlay">
 
@@ -114,6 +130,7 @@
           <h1><span class="orange-letters">&lt;</span> C# and .NET <span class="orange-letters">/&gt;</span></h1>
           <div class="anchor"></div>
         </div>
+      
 
         <main class="main-content">
           <div class="skills-exp-cont">
@@ -143,15 +160,15 @@
               <div class="project-cards-container">
                 <div>
                   <h1>Project 1</h1>
-                  <a class="card-wrap"></a>
+                  <a href="#open-project-popup"  class="card-wrap"></a>
                 </div>
                 <div>
                   <h1>Project 2</h1>
-                  <a href="#" class="card-wrap"></a>
+                  <a href="#open-project-popup" class="card-wrap"></a>
                 </div>
                 <div>
                   <h1>Project 3</h1>
-                  <a href="#" class="card-wrap"></a>
+                  <a href="#open-project-popup" class="card-wrap"></a>
                 </div>
               </div>
             </div>

@@ -1393,9 +1393,9 @@ div[class*='cert-logo'] {
 }
 
 @media (min-width: 500px) {
-  .cert-cont {
-    height: 500px;
-  }
+    .cert-cont {
+      height: 500px;
+    }
     .cert-cont-bottom {
         display: -webkit-box;
         display: flex;
@@ -1412,6 +1412,11 @@ div[class*='cert-logo'] {
     }
 }
 
+/*
+*********************
+Linked page - Projects
+*********************
+*/
 
 .projects-cont {
   display: flex;
@@ -1524,15 +1529,24 @@ div[class*='cert-logo'] {
   }
 }
 
+
 .project-cards-container > div > h1 {
   color: white;
 }
+
+/*
+*********************
+Linked page - Projects popup
+*********************
+*/
 
 .blur-in {
   -webkit-animation: blurin 2s forwards;
   -moz-animation: blurin 2s forwards;
   -o-animation: blurin 2s forwards;
   animation: blurin 2s forwards;
+  z-index: 4;
+
 }
 
 #background {
@@ -1611,6 +1625,57 @@ div[class*='cert-logo'] {
       -o-filter: blur(4px);
       -ms-filter: blur(4px);
       filter: blur(4px);
+  }
+}
+
+.project-popup {
+  position: fixed;
+  background-color: white;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+
+  pointer-events: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.project-popup:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.project-popup>div {
+  position: relative;
+  padding: 2rem;
+  color: #444;
+}
+
+.project-popup .close-project-popup
+{
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+
+@media (min-width: 578px) {
+  .project-popup {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
   }
 }
 
