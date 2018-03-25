@@ -1041,9 +1041,7 @@ Linked page - Title header
   margin-bottom: 0;
   text-align: center;
   font-size: 4rem;
-  width: 100%;
-  padding-right: 40px;
-  padding-left: 40px; }
+  width: 80%; }
 
 .jumbo-header-front .anchor::before {
   content: url("../images/anchor_icon.png");
@@ -1318,7 +1316,10 @@ Linked page - skills/experience background
 *********************
 */
 .main-content {
-  background-color: #E7E5DF; }
+  background-color: #E7E5DF;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
 
 /*
 ****************************************************
@@ -1358,6 +1359,8 @@ Skills/experience pages - Skills and Experience Headings
   -ms-justify-content: center;
   -o-justify-content: center;
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   height: 500px;
   margin-bottom: 30px;
   background-color: white;
@@ -1488,6 +1491,8 @@ Linked page - Projects
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   height: 100%;
   margin-bottom: 30px;
   background-color: white;
