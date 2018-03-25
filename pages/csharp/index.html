@@ -52,6 +52,8 @@
         $('.card-wrap').click(function (e) {
 
           $('#blur-overlay').addClass('blur-in');
+
+          $('body').css('overflow', 'hidden');
           
           e.stopPropagation();
         });
@@ -59,9 +61,19 @@
         $('.close-project-popup').click(function (e) {
 
           $('#blur-overlay').removeClass('blur-in');
+          $('body').css('overflow', 'visible');
           
           e.stopPropagation();
         });
+
+        $('#blur-overlay').click(function (e) {
+
+          $('#blur-overlay').removeClass('blur-in');
+          $('body').css('overflow', 'visible');
+          window.location.href = "#close-project-popup";
+
+        });
+
       });
 
       </script>
@@ -71,7 +83,9 @@
 
     <div id="open-project-popup" class="project-popup">
       <div>
-        <a href="#close-project-popup" title="Close" class="close-project-popup">Close</a>
+        <div class="popup-header">
+          <a href="#close-project-popup" title="Close" class="close-project-popup"><i class="fa fa-window-close"></i></a>
+        </div>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque necessitatibus repellat culpa est porro minus, cum doloribus rerum cupiditate sint quo, nesciunt repellendus laudantium sunt suscipit labore voluptatibus in minima?</p>
       </div>
 
