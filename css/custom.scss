@@ -1709,3 +1709,58 @@ Linked page - Projects popup
 .popup-content {
     padding: 5% 5% 5% 5%;
 }
+
+/*
+*********************
+Linked page - Generic flex container
+*********************
+*/
+
+.generic-flex-container {
+    display: -webkit-box;
+    display: flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -o-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    -webkit-box-flex: 0;
+    flex: 0 1 auto;
+    -webkit-flex: 0 1 auto;
+    -moz-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    -o-flex: 0 1 auto;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: flex-start;
+    -webkit-align-items: flex-start;
+    -moz-align-items: flex-start;
+    -ms-align-items: flex-start;
+    -o-align-items: flex-start;
+    -webkit-box-pack: flex-start;
+    -ms-flex-pack: flex-start;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(41, 51, 69, 0.75);
+    box-shadow: 5px 5px 5px 0px rgba(41, 51, 69, 0.75);
+    background-color: white;
+}
+
+.generic-flex-container>h1 {
+    padding-left:2%;
+    padding-top:2%;
+}
+
+@media (min-width: 800px) {
+}
