@@ -1652,6 +1652,8 @@ Linked page - Projects popup
 
   -webkit-transition: all 600ms;
   transition: all 600ms;
+
+  overflow-y: scroll;
 }
 
 
@@ -1689,6 +1691,8 @@ Linked page - Projects popup
     font-size: 2em;
     color: #FC9E49;
     background-color: #293345; 
+    padding-right: 20px;
+    padding-top: 25%;
 }
 
 .popup-header {
@@ -1696,9 +1700,16 @@ Linked page - Projects popup
     top: 0;
     left: 0;
     right: 0;
-    
     width: 100%;
     height: 100px;
     background-color: #293345;
 }
 
+.project-popup>div {
+    padding: 0;
+}
+
+.popup-content {
+    position: relative;
+    margin-top: 100px;
+}
