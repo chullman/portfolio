@@ -420,7 +420,7 @@ Home Page - Introduction box
     height: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: #E7E5DF;
+    background-color: white;
 }
 
 #intro-box > h1,
@@ -604,23 +604,11 @@ Home page - Cards
 }
 
 .card-bottom-half {
+    padding: 10%;
     background-color: #1A2530;
     height: 50%;
     display: block;
     position: relative;
-}
-
-.card-bottom-tags {
-    display: block;
-    font-size: 12px;
-    font-weight: bold;
-    color: #bbb;
-    text-transform: uppercase;
-    letter-spacing: .05em;
-    margin-top: auto;
-    margin-bottom: 0;
-    position: absolute;
-    bottom: 0;
 }
 
 .card-title {
