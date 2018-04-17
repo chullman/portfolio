@@ -605,6 +605,12 @@ Home Page - Introduction box
 Home page - Cards
 *********************
 */
+.rope-background {
+  background-image: url(../images/rope.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white; }
+
 #cards-container {
   display: -webkit-box;
   display: flex;
@@ -644,8 +650,7 @@ Home page - Cards
   -moz-justify-content: space-around;
   -ms-justify-content: space-around;
   -o-justify-content: space-around;
-  width: 100%;
-  margin-top: 5%; }
+  width: 100%; }
 
 #cards-container .button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary {
   display: block;
