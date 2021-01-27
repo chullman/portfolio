@@ -1550,12 +1550,16 @@ Skills/experience pages - Skills and Experience Headings
   position: relative;
 }
 
+.skills-exp-cont li {
+  font-size: 1.2em;
+}
+
 .skills-exp-cont-left {
   width: 100%;
   height: 50%;
 }
 
-.skills-exp-cont-left > h1 {
+.skills-exp-cont-left > h2 {
   text-align: center;
 }
 
