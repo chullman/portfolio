@@ -1544,7 +1544,7 @@ Skills/experience pages - Skills and Experience Headings
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  height: 500px;
+  height: 100%;
   margin-bottom: 30px;
   background-color: white;
   position: relative;
@@ -1552,6 +1552,8 @@ Skills/experience pages - Skills and Experience Headings
 
 .skills-exp-cont li {
   font-size: 1.2em;
+  padding-left: 5%;
+  padding-right: 1%;
 }
 
 .skills-exp-cont-left {
