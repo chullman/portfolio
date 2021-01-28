@@ -2030,16 +2030,31 @@ Linked page - Projects popup
   -o-justify-content: center;
   width: 100%;
   height: 100%;
+  padding: 0;
+  margin: 0;
 }
 
-.project-screenshots-pqlines1::before {
+.project-screenshots-pqlines1 {
   content: url("../images/pqlines_main.png");
+  padding: 0;
+  margin: 0;
+}
+
+.project-screenshots-pqlines2 {
+  content: url("../images/pqlines_selection.png");
+  padding: 0;
+  margin: 0;
+}
+
+/*
+.project-screenshots-pqlines1::before {
+    content: url("../images/pqlines_main.png");
 }
 
 .project-screenshots-pqlines2::before {
-  content: url("../images/pqlines_selection.png");
+    content: url("../images/pqlines_selection.png");
 }
-
+*/
 /*
 *********************
 Linked page - Generic flex container
