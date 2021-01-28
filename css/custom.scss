@@ -1446,26 +1446,48 @@ Linked page - Projects
 */
 
 .projects-cont {
-  display: flex;
-
-  flex-direction: column;
-
-  flex: 0 1 auto;
-
-  align-items: center;
-
-  justify-content: center;
-
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-
-  height: 100%;
-  margin-bottom: 30px;
-  // -webkit-box-shadow: 5px 5px 5px 0px rgba(41, 51, 69, 0.75);
-  // box-shadow: 5px 5px 5px 0px rgba(41, 51, 69, 0.75);
-  background-color: white;
-  position: relative;
+    display: -webkit-box;
+    display: flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -o-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    -webkit-box-flex: 0;
+    flex: 0 1 auto;
+    -webkit-flex: 0 1 auto;
+    -moz-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    -o-flex: 0 1 auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    width: 100%;
+    //padding-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    //height: 500px;
+    height: 100%;
+    margin-bottom: 30px;
+    // -webkit-box-shadow: 5px 5px 5px 0px rgba(41, 51, 69, 0.75);
+    // box-shadow: 5px 5px 5px 0px rgba(41, 51, 69, 0.75);
+    background-color: white;
+    position: relative;
 }
 
 .projects-cont-left {
@@ -1473,7 +1495,7 @@ Linked page - Projects
   height: 50%;
 }
 
-.projects-cont-left > h1 {
+.projects-cont-left > h2 {
   text-align: center;
 }
 
@@ -1482,6 +1504,9 @@ Linked page - Projects
   height: 50%;
 }
 
+
+
+/*
 @media (min-width: 800px) {
   .projects-cont {
       flex-direction: row;
@@ -1505,7 +1530,9 @@ Linked page - Projects
     position: fixed;
     top: 0;
   }
+
 }
+*/
 
 .project-cards-container {
 
@@ -1524,8 +1551,30 @@ Linked page - Projects
   justify-content: space-around;
 
   width: 100%;
-  margin-top: 5%;
+  
 }
+
+.projects-thumb {
+    height: 50%;
+    width: 100%;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-bottom: 5px solid #FC9E49;
+    content: url(../images/xamarin_logo.png);
+}
+
+.project-cards-container .button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary {
+    display: block;
+    position: relative;
+    margin-top: 10px;
+    max-width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #1A2530;
+    border-color: #FC9E49;
+    font-size: 15px;
+  }
 
 .project-cards-container > div {
   display: flex;
@@ -1545,11 +1594,13 @@ Linked page - Projects
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
   transition: all .3s ease-in;
-  width: 400px;
-  height: 550px;
+  width: auto;
+  height: auto;
   margin-bottom: 30px;
-  margin-right: 15px;
-  margin-left: 15px;
+  margin-right: 5px;
+  margin-left: 5px;
+
+  padding: 3%;
 
   &:hover {
 
@@ -1560,7 +1611,7 @@ Linked page - Projects
 }
 
 
-.project-cards-container > div > h1 {
+.project-cards-container > div > h2, h4 {
   color: white;
 }
 
