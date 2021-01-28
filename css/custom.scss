@@ -1787,6 +1787,71 @@ Linked page - Projects popup
     padding: 5% 5% 5% 5%;
 }
 
+.popup-content > p {
+    font-size: 1.2em;
+}
+
+.popup-content > h4 {
+    color: black;
+}
+
+.popup-content .popup-content-border {
+    border-bottom: 5px solid #FC9E49;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 100%;
+}
+
+.project-screenshots {
+    display: -webkit-box;
+    display: flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -o-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    -webkit-box-flex: 0;
+    flex: 0 1 auto;
+    -webkit-flex: 0 1 auto;
+    -moz-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    -o-flex: 0 1 auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    width: 100%;
+    height: 100%;
+    
+    margin-bottom: 30px;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(41, 51, 69, 0.75);
+    box-shadow: 5px 5px 5px 0px rgba(41, 51, 69, 0.75);
+    background-color: white;
+    position: relative;
+}
+
+.project-screenshots-pqlines1::before {
+    content: url("../images/pqlines_main.png");
+}
+
+.project-screenshots-pqlines2::before {
+    content: url("../images/pqlines_selection.png");
+}
+
 /*
 *********************
 Linked page - Generic flex container
