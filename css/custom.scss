@@ -1561,7 +1561,8 @@ Linked page - Projects
     background-position: center center;
     background-repeat: no-repeat;
     border-bottom: 5px solid #FC9E49;
-    content: url(../images/xamarin_logo.png);
+    object-fit:none;
+    
 }
 
 .project-cards-container .button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary {
@@ -1596,6 +1597,7 @@ Linked page - Projects
   transition: all .3s ease-in;
   width: auto;
   height: auto;
+  max-width: 400px;
   margin-bottom: 30px;
   margin-right: 5px;
   margin-left: 5px;
