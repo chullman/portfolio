@@ -1797,6 +1797,10 @@ Linked page - Projects popup
     color: black;
 }
 
+.popup-content li {
+    font-size: 1.2em;
+}
+
 .popup-content .popup-content-border {
     border-bottom: 5px solid #FC9E49;
     padding-top: 1%;
@@ -1843,8 +1847,7 @@ Linked page - Projects popup
     margin: 0;
 }
 
-.project-screenshots-pqlines1 {
-    content: url("../images/pqlines_main.png");
+.project-screenshots-example {
     padding-top: 0;
     padding-left: 0;
     padding-right: 0;
@@ -1854,16 +1857,6 @@ Linked page - Projects popup
     
 }
 
-.project-screenshots-pqlines2 {
-    content: url("../images/pqlines_selection.png");
-    padding-top: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 5%;
-    margin: 0;
-    max-width: 100%;
-    
-}
 /*
 .project-screenshots-pqlines1::before {
     content: url("../images/pqlines_main.png");
