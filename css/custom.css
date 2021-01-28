@@ -2036,14 +2036,22 @@ Linked page - Projects popup
 
 .project-screenshots-pqlines1 {
   content: url("../images/pqlines_main.png");
-  padding: 0;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 5%;
   margin: 0;
+  max-width: 100%;
 }
 
 .project-screenshots-pqlines2 {
   content: url("../images/pqlines_selection.png");
-  padding: 0;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 5%;
   margin: 0;
+  max-width: 100%;
 }
 
 /*
