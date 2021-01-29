@@ -35,7 +35,7 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
     <script>
@@ -61,15 +61,17 @@
         }
       });
 
-      $(window).on("navigate", function (event, data) {
-        var direction = data.state.direction;
-        if (direction == 'back') {
-          alert('TEST');
-          $('body').css('overflow', 'visible');
-          window.location.href = "#close-project-popup";
-          
-          e.stopPropagation();
-        }
+      $(document).ready(function() {
+        $(window).on("navigate", function (event, data) {
+          var direction = data.state.direction;
+          if (direction == 'back') {
+            alert('TEST');
+            $('body').css('overflow', 'visible');
+            window.location.href = "#close-project-popup";
+            
+            e.stopPropagation();
+          }
+        });
       });
 
       $(document).ready(function() {
