@@ -18,6 +18,9 @@
     <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,900" rel="stylesheet">
     <!-- CSS -->
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+
     <link rel="stylesheet" href="../../css/normalize.css">
     <link rel="stylesheet" href="../../css/skeleton.css">
     <!-- Font Awesome CSS -->
@@ -30,7 +33,11 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="../../images/favicon.png">
 
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+
     <script>
        $(document).ready(function() {
         // When the user scrolls the page, execute myFunction 
@@ -53,6 +60,16 @@
           }
         }
       });
+
+
+        $(window).on("navigate", function (event, data) {
+          var direction = data.state.direction;
+          if (direction == 'back') {
+            $('body').css('overflow', 'visible');
+            window.location.href = "#close-project-popup";
+          }
+        });
+
 
       $(document).ready(function() {
         $('.card-wrap').click(function (e) {
