@@ -54,6 +54,16 @@
         }
       });
 
+      $(window).on("navigate", function (event, data) {
+        var direction = data.state.direction;
+        if (direction == 'back') {
+          $('body').css('overflow', 'visible');
+          window.location.href = "#close-project-popup";
+          
+          e.stopPropagation();
+        }
+      });
+
       $(document).ready(function() {
         $('.card-wrap').click(function (e) {
 
