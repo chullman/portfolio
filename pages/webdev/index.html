@@ -23,11 +23,123 @@
     <link rel="stylesheet" href="../../fonts/icomoon.css">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="../../images/favicon.png">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+       $(document).ready(function() {
+        // When the user scrolls the page, execute myFunction 
+        window.onscroll = function() {myFunction()};
+  
+        // Get the header
+
+        var projectsCont = document.getElementById("projects-cont");
+        var header = document.getElementById("projects-header-sticky");
+  
+        // Get the offset position of the navbar
+        var sticky = projectsCont.offsetTop;
+  
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+      });
+
+      $(document).ready(function() {
+        $('.card-wrap').click(function (e) {
+
+          $('#blur-overlay').addClass('blur-in');
+
+          $('body').css('overflow', 'hidden');
+          
+          e.stopPropagation();
+        });
+
+        $('.close-project-popup').click(function (e) {
+
+          $('#blur-overlay').removeClass('blur-in');
+          $('body').css('overflow', 'visible');
+          
+          e.stopPropagation();
+        });
+
+        $('#blur-overlay').click(function (e) {
+
+          $('#blur-overlay').removeClass('blur-in');
+          $('body').css('overflow', 'visible');
+          window.location.href = "#close-project-popup";
+
+        });
+
+      });
+
+      </script>
+
   </head>
   <body>
 
-      <div id="#blur-overlay">
-      <div id="background">
+    <div id="open-project-popup-1" class="project-popup">
+      <div>
+          <div class="popup-header">
+            <a href="#close-project-popup" title="Close" class="close-project-popup"><i class="fa fa-window-close"></i></a>
+          </div>
+          <div class="popup-content">
+            <h3>Application:</h3>
+            <h4>"Bubble Buddies"</h4>
+            <p>Likened to the popular group event hosting and organisation platform, "meetup.com", this app was developed from the ground up as a demo/student project to showcase my skills and experience in Rails development. Key phases of the Software Development Lifecycle were conducted and recorded/documented as part of this project.</p>
+            <div class="popup-content-border"></div>
+            <h3>Source:</h3>
+            <p><span class="bold" style="word-wrap: break-word;"><a href="https://github.com/chullman/BubbleBuddies">https://github.com/chullman/BubbleBuddies</a></span></p>
+            <p><span class="bold" style="word-wrap: break-word;">Live Demo: <a href="https://bubble-buddies.herokuapp.com">https://bubble-buddies.herokuapp.com</a></span></p>
+            <div class="popup-content-border"></div>
+            <h3>Key Technology:</h3>
+            <p>I had built this application using <span class="bold">Ruby on Rails v5.2.0</span> - a server-side web application framework written in Ruby based on the MVC structure.</p>
+            <p>I had designed and implemented a rudimentary relational database schema to be executed on a <span class="bold">PostgreSQL DBMS</span>.</p>
+            <p>The key advantage of this framework is that I was able to write foundational code that was device-agnostic, meaning I could effectively "code once" and the framework will automatically render the functionality to both iOS and Android at the native level. Additionally, Xamarin.Forms still allowed for device specific tweaking of app functionality and design where necessary without needing to know any mobile device specific proprietary programming language.</p>
+            <p>Certain existing publically sourced APIs were utilised such as Google Maps and Stripe</p>
+            <div class="popup-content-border"></div>
+            <h3>Screenshots:</h3>
+            <div class="project-screenshots">
+              <div class="project-screenshots-example" style="content: url(../../images/bb_main.png);"></div>
+            </div>
+          </div>
+      </div>
+
+    </div>
+
+    <div id="open-project-popup-2" class="project-popup">
+      <div>
+          <div class="popup-header">
+            <a href="#close-project-popup" title="Close" class="close-project-popup"><i class="fa fa-window-close"></i></a>
+          </div>
+          <div class="popup-content">
+            <h3>Application:</h3>
+            <h4>"SAP Dashboard"</h4>
+            <p>Designed and purposed with the objective to provide a more "user-friendly" interface for stakeholders to perform data analytics and gather information from select SAP ERP data marts with excellent <span class="bold">User Experience (UX)</span> in mind. Although it is in its prototype stage, the foundational code structure is all in place, ready to be built upon with relative ease with more dashboard functionality.</p>
+            <div class="popup-content-border"></div>
+            <h3>Source:</h3>
+            <i>(Omitted for copyright reasons)</i>
+            <div class="popup-content-border"></div>
+            <h3>Key Technology:</h3>
+            <p>I had built this application using <span class="bold">ASP.NET MVC</span>.</p>
+            <p>Readily available, open-source jQuery snippets were utilised to assist with dynamic functionality of rendering the necessary key information for the user.</p>
+            <p>Bootstrap 3 was utilised to aid in rapid and easier front-end development.</p>
+            <div class="popup-content-border"></div>
+            <h3>Screenshots:</h3>
+            <div class="project-screenshots">
+              <div class="project-screenshots-example" style="content: url(../../images/sapdash_main.png);"></div>
+            </div>
+          </div>
+      </div>
+
+    </div>
+
+
+    <div id="#blur-overlay">
+    <div id="background">
 
     <ul class="contact-fixed-sidebar">
       <li>
@@ -77,28 +189,64 @@
       </div>
 
       <main class="main-content">
-      <div class="skills-exp-cont">
-        <div class="skills-exp-cont-left">
-          <h1>Skills</h1>
-          <h2>Coming Soon!</h2>
+        <div class="skills-exp-cont">
+          <div class="skills-exp-cont-left">
+            <h2>Skills and Experience</h2>
+            <ul>
+              <li>
+                Supported legacy <span class="bold">ASP.NET MVC</span> applications.
+              </li>
+              <li>
+                Created a new ASP.NET MVC application using a well renown and popular HTML, CSS, and JS framework for a responsive, mobile first website.
+              </li>
+              <li>
+                Customised and implemented an existing <span class="bold">jQuery</span> template fit for purpose into the aforementioned ASP.NET application.
+              </li>
+              <li>
+                Adequate use of <span class="bold">Google Chrome's Developer Tools</span> to help with web page front-end debugging.
+              </li>
+              <li>
+                The generation and customisation of various <span class="bold">Ruby on Rails</span> web applications, as well as implementing and taking advantage of various powerful gems that are available, where appropriate.
+              </li>
+              <li>
+                Using HTML and CSS to build a mobile first website from scratch, using only light-weight, boilerplate template primarily for browser normalisation.
+              </li>
+            </ul>
+          </div>
+          <!--<div class="skills-exp-cont-right">
+          </div>-->
         </div>
-        <div class="skills-exp-cont-right">
-        </div>
-      </div>
-      <div class="skills-exp-cont">
-        <div class="skills-exp-cont-left">
-          <h1>Experience</h1>
-          <h2>Coming Soon!</h2>
-        </div>
-        <div class="skills-exp-cont-right">
-        </div>
-      </div>
-      <div class="skills-exp-cont">
-        <div class="skills-exp-cont-left">
-          <h1>Projects</h1>
-          <h2>Coming Soon!</h2>
-        </div>
-        <div class="skills-exp-cont-right">
+        <div class="projects-cont" id="projects-cont">
+          <div class="projects-cont-left">
+            <!--<div id="projects-header-sticky">-->
+              <h2>Example Projects</h2>
+            <!--</div>-->
+          
+          <!--<div class="projects-cont-right">-->
+            
+            <div class="project-cards-container">
+              
+              <div>
+                <h2>> Project 1</h2>
+                
+                <h4>Demo MVC App - Ruby on Rails</h4>
+                <a class="button button-primary">GO</a>
+                
+                <div class="projects-thumb" style="content: url(../../images/rails_logo.png);"></div>
+                
+                <a href="#open-project-popup-1"  class="card-wrap"></a>
+              </div>
+              <div>
+                <h2>> Project 2</h2>
+                <h4>MVC App - ASP.NET</h4>
+                <a class="button button-primary">GO</a>
+
+                <div class="projects-thumb" style="content: url(../../images/asp_logo.png);"></div>
+
+                <a href="#open-project-popup-2" class="card-wrap"></a>
+              </div>
+            </div>
+          <!--</div>-->
         </div>
       </div>
       </main>
