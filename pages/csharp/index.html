@@ -66,6 +66,15 @@
           e.stopPropagation();
         });
 
+        $('#background').click(function (e) {
+
+          //$('#blur-overlay').removeClass('blur-in');
+          $('body').css('overflow', 'visible');
+          window.location.href = "#close-project-popup";
+          
+          e.stopPropagation();
+        });
+
         $('#blur-overlay').click(function (e) {
 
           $('#blur-overlay').removeClass('blur-in');
@@ -140,7 +149,7 @@
     </div>
 
 
-    <div id="blur-overlay">
+    <!--<div id="blur-overlay">-->
 
     <div id="background">
 
@@ -305,7 +314,7 @@
 
     </div>
 
-    </div>
+    <!--</div>-->
 
   </body>
 </html>

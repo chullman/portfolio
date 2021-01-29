@@ -1623,6 +1623,8 @@ Linked page - Projects popup
 *********************
 */
 
+
+/*
 .blur-in {
   -webkit-animation: blurin 2s forwards;
   -moz-animation: blurin 2s forwards;
@@ -1631,6 +1633,7 @@ Linked page - Projects popup
   z-index: 4;
 
 }
+*/
 
 #background {
   background-image: url(../images/background.png);
@@ -1639,6 +1642,7 @@ Linked page - Projects popup
   background-position: center;
 }
 
+/*
 @keyframes blurin {
   0% {
       -webkit-filter: blur(0px);
@@ -1710,6 +1714,7 @@ Linked page - Projects popup
       filter: blur(4px);
   }
 }
+*/
 
 
 .project-popup {
@@ -1725,19 +1730,19 @@ Linked page - Projects popup
   margin: 0;
   width: 100%;
 
-  transform: translateY(100px);
+  //transform: translateY(100px);
 
   pointer-events: none;
 
-  -webkit-transition: all 600ms;
-  transition: all 600ms;
+  //-webkit-transition: all 600ms;
+  //transition: all 600ms;
 
   overflow-y: scroll;
 }
 
 
 .project-popup:target {
-    transform: translateY(0px);
+    //transform: translateY(0px);
   opacity: 1;
   pointer-events: auto;
 }
@@ -1751,7 +1756,7 @@ Linked page - Projects popup
 {
   position: relative;
   float: right;
-  transition: all 200ms;
+  //transition: all 200ms;
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
@@ -1775,7 +1780,6 @@ Linked page - Projects popup
 }
 
 .popup-header {
-
     width: 100%;
     height: 100px;
     background-color: #293345;

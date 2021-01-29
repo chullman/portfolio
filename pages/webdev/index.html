@@ -51,7 +51,7 @@
       $(document).ready(function() {
         $('.card-wrap').click(function (e) {
 
-          $('#blur-overlay').addClass('blur-in');
+          //$('#blur-overlay').addClass('blur-in');
 
           $('body').css('overflow', 'hidden');
           
@@ -60,15 +60,24 @@
 
         $('.close-project-popup').click(function (e) {
 
-          $('#blur-overlay').removeClass('blur-in');
+          //$('#blur-overlay').removeClass('blur-in');
           $('body').css('overflow', 'visible');
+          
+          e.stopPropagation();
+        });
+
+        $('#background').click(function (e) {
+
+          //$('#blur-overlay').removeClass('blur-in');
+          $('body').css('overflow', 'visible');
+          window.location.href = "#close-project-popup";
           
           e.stopPropagation();
         });
 
         $('#blur-overlay').click(function (e) {
 
-          $('#blur-overlay').removeClass('blur-in');
+          //$('#blur-overlay').removeClass('blur-in');
           $('body').css('overflow', 'visible');
           window.location.href = "#close-project-popup";
 
@@ -138,7 +147,7 @@
     </div>
 
 
-    <div id="#blur-overlay">
+    <!--<div id="#blur-overlay">-->
     <div id="background">
 
     <ul class="contact-fixed-sidebar">
@@ -296,7 +305,7 @@
 
     </div>
 
-    </div>
+    <!--</div>-->
   </body>
 </html>
 
