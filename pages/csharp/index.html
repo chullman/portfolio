@@ -62,6 +62,7 @@
       $(window).on("navigate", function (event, data) {
         var direction = data.state.direction;
         if (direction == 'back') {
+          alert('TEST');
           $('body').css('overflow', 'visible');
           window.location.href = "#close-project-popup";
           
